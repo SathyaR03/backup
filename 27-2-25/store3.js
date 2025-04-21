@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var product_1 = require("./product");
+var customer_1 = require("./customer");
+var store = new product_1.Store();
+var product1 = new product_1.Product('Apple', 1.5, 'Fruits');
+var product2 = new product_1.Product('Broccoli', 2.0, 'Vegetables');
+var product3 = new product_1.Product('Milk', 1.2, 'Dairy');
+store.addProduct(product1);
+store.addProduct(product2);
+store.addProduct(product3);
+var customer = new customer_1.Customer('John Doe', 'john.doe@example.com');
+customer.addPurchasedProduct(product1);
+customer.addPurchasedProduct(product3);
+customer.listCustomerPurchases();

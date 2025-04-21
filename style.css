@@ -1,0 +1,35 @@
+
+input{
+    display: table-cell;
+
+}
+
+label{
+    display: table-cell;
+}
+form{
+     display: table;
+}
+   
+section {
+     display: table-row; 
+ }
+
+ button{
+    height: 30px;
+    width: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+ }
+
+ button:hover{
+    background-color:#48cae4;
+ }
+
+ #m{
+    border: 1px solid grey;
+    width:40%;
+    display: grid;
+    place-items: center;
+  
+ }
